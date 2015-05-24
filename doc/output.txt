@@ -1,0 +1,76 @@
+192-168-1-12:dotfiles jet$ ./deploy.sh 
+Deployment script, current settings:
+Computer name:      Jet Test MacBook Pro
+Language:           en
+Locale:             en_AU@currency=AUD
+Measurement units:  Centimeters
+Time zone:          Australia/Melbourne
+
+Make sure you have installed Xcode and launched it once.
+
+Execute script with these settings? (y/n)
+y
+It appears Homebrew is already installed. If your intent is to reinstall you
+should do the following before running this installer again:
+    rm -rf /usr/local/Cellar /usr/local/.git && brew cleanup
+Your system is ready to brew.
+This command requires a formula argument
+Warning: ruby-2.1.0 already installed
+Warning: git-1.8.5.3 already installed
+Warning: brew-cask-0.27.1 already installed
+Warning: Cask for dropbox is already installed. Use `--force` to install anyways.
+Warning: Cask for evernote is already installed. Use `--force` to install anyways.
+Warning: Cask for f-lux is already installed. Use `--force` to install anyways.
+Warning: Cask for firefox is already installed. Use `--force` to install anyways.
+Warning: Cask for google-chrome is already installed. Use `--force` to install anyways.
+Warning: Cask for knock is already installed. Use `--force` to install anyways.
+Warning: Cask for sizeup is already installed. Use `--force` to install anyways.
+Warning: Cask for textmate is already installed. Use `--force` to install anyways.
+Warning: Cask for the-unarchiver is already installed. Use `--force` to install anyways.
+Warning: Cask for provisioning is already installed. Use `--force` to install anyways.
+Warning: Cask for qlstephen is already installed. Use `--force` to install anyways.
+Warning: Cask for qlcolorcode is already installed. Use `--force` to install anyways.
+Warning: Cask for quicklook-json is already installed. Use `--force` to install anyways.
+Already up-to-date.
+
+App install finished.
+Areas not covered by this script:
+  - Setup correct PATH variable for php to use MAMP version.
+  - Install apps such as: Adobe CS, Aperture, Final Cut Pro, iWork, Microsoft Office, etc.
+2014-01-27 20:09:24.795 defaults[57667:507] Unexpected argument Test; leaving defaults unchanged.
+General setup. Finished.
+Set: Entry, ":FK_StandardViewSettings:IconViewSettings:arrangeBy", Does Not Exist
+Set: Entry, ":FK_StandardViewSettings:IconViewSettings:iconSize", Does Not Exist
+Set: Entry, ":FK_StandardViewSettings:IconViewSettings:gridSpacing", Does Not Exist
+Finder setup. Finished.
+2014-01-27 20:09:25.891 systemsetup[57743:1403] ### authenticateUsingAuthorizationSync error:Error Domain=com.apple.systemadministration.authorization Code=-60007 "The operation couldn’t be completed. (com.apple.systemadministration.authorization error -60007.)"
+Network Time is already on.
+2014-01-27 20:09:25.930 systemsetup[57745:1403] ### authenticateUsingAuthorizationSync error:Error Domain=com.apple.systemadministration.authorization Code=-60007 "The operation couldn’t be completed. (com.apple.systemadministration.authorization error -60007.)"
+setNetworkTimeServer: time.asia.apple.com.
+2014-01-27 20:09:25.970 systemsetup[57746:1403] ### authenticateUsingAuthorizationSync error:Error Domain=com.apple.systemadministration.authorization Code=-60007 "The operation couldn’t be completed. (com.apple.systemadministration.authorization error -60007.)"
+Trackpad, mouse, keyboard, Bluetooth accessories and input setup. Finished
+{
+    askForPassword = 1;
+    askForPasswordDelay = 5;
+}
+2014-01-27 20:09:26.183 systemsetup[57759:1403] ### authenticateUsingAuthorizationSync error:Error Domain=com.apple.systemadministration.authorization Code=-60007 "The operation couldn’t be completed. (com.apple.systemadministration.authorization error -60007.)"
+Restart After Power Failure: Not supported on this machine.
+Warning: Idle sleep timings for "AC Power" may not behave as expected.
+- Display sleep should have a lower timeout than system sleep.
+Power management, screensaver and display setup. Finished.
+2014-01-27 20:09:29.690 systemsetup[57798:1403] ### authenticateUsingAuthorizationSync error:Error Domain=com.apple.systemadministration.authorization Code=-60007 "The operation couldn’t be completed. (com.apple.systemadministration.authorization error -60007.)"
+Sharing and remote connection setup. Finised.
+Dock setup. Finished.
+Spotlight setup. Finished.
+Time Machine setup. Finished.
+Default apps setup. Finished.
+SizeUp setup. Finished.
+
+Setup finished.
+Areas not covered by this script:
+  - Setup the screensaver.
+  - Setup the clock and power icons in the menu bar.
+  - Set the default column width in column view.
+
+Please restart.
+192-168-1-12:dotfiles jet$ 
