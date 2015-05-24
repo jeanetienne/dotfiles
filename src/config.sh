@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # Inspiration from:
 # https://github.com/mathiasbynens/dotfiles/blob/master/.osx
@@ -6,6 +6,8 @@
 
 function config
 {
+  sudo -v
+	
   COMPUTER_NAME="$1"
   LANGUAGE="$2"
   LOCALE="$3"
@@ -116,7 +118,7 @@ function config
   # Disable smart dashes as they're annoying when typing code
   defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 
-  echo "General setup. Finished."
+  echo "# General setup. Finished."
 
   ###############################################################################
   # Finder
@@ -235,7 +237,7 @@ function config
   	OpenWith -bool true \
   	Privileges -bool true
   
-  echo "Finder setup. Finished."
+  echo "# Finder setup. Finished."
 
   ###############################################################################
   # Trackpad, mouse, keyboard, Bluetooth accessories and input
@@ -270,8 +272,8 @@ function config
   # defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
   # Set a blazingly fast keyboard repeat rate
-  defaults write NSGlobalDomain KeyRepeat -int 0
-  defaults write NSGlobalDomain InitialKeyRepeat -int 5
+  defaults write NSGlobalDomain KeyRepeat -int 1
+  defaults write NSGlobalDomain InitialKeyRepeat -int 10
 
   # disable automatically illuminate built-in MacBook keyboard in low light
   defaults write com.apple.BezelServices kDim -bool false
@@ -297,7 +299,7 @@ function config
   # Disable auto-correct
   defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
   
-  echo "Trackpad, mouse, keyboard, Bluetooth accessories and input setup. Finished"
+  echo "# Trackpad, mouse, keyboard, Bluetooth accessories and input setup. Finished"
 
   ###############################################################################
   # Power management, screensaver and display
@@ -380,7 +382,7 @@ function config
   sudo pmset -b displaysleep 5
   sudo pmset -b sleep 10
   
-  echo "Power management, screensaver and display setup. Finished."
+  echo "# Power management, screensaver and display setup. Finished."
 
   ###############################################################################
   # Sharing and remote connection
@@ -392,7 +394,7 @@ function config
   # Enable screen sharing
   sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.screensharing.plist
   
-  echo "Sharing and remote connection setup. Finised."
+  echo "# Sharing and remote connection setup. Finished."
 
   ###############################################################################
   # Dock
@@ -479,7 +481,7 @@ function config
   defaults write com.apple.dock wvous-bl-corner -int 10
   defaults write com.apple.dock wvous-bl-modifier -int 0
   
-  echo "Dock setup. Finished."
+  echo "# Dock setup. Finished."
 
   ###############################################################################
   # Spotlight
@@ -518,7 +520,7 @@ function config
   # Rebuild the index from scratch
   sudo mdutil -E / > /dev/null
 
-  echo "Spotlight setup. Finished."
+  echo "# Spotlight setup. Finished."
 
   ###############################################################################
   # Time Machine
@@ -530,7 +532,7 @@ function config
   # Disable local Time Machine backups
   sudo tmutil disablelocal
 
-  echo "Time Machine setup. Finished."
+  echo "# Time Machine setup. Finished."
 
   ###############################################################################
   # Default apps
@@ -659,7 +661,7 @@ function config
   defaults write com.apple.TextEdit PlainTextEncoding -int 4
   defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
 
-  echo "Default apps setup. Finished."
+  echo "# Default apps setup. Finished."
 
   ###############################################################################
   # SizeUp.app
@@ -671,15 +673,14 @@ function config
   # Don't show the preferences window on next start
   defaults write com.irradiatedsoftware.SizeUp ShowPrefsOnNextStart -bool false
   
-  echo "SizeUp setup. Finished."
+  echo "# SizeUp setup. Finished."
 
   echo ""
   echo "Setup finished."
   echo "Areas not covered by this script:"
   echo "  - Setup the screensaver."
-  echo "  - Adjusting columns width."
   echo "  - Setup the clock and power icons in the menu bar."
+  echo "  - Set the default column width in column view."
+  echo ""
   echo "Please restart."
-
-  exit;
 }
