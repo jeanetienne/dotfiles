@@ -13,7 +13,7 @@ source ./config_finder.sh
 source ./config_fish.sh
 source ./config_git.sh
 source ./config_global.sh
-source ./config_iterm.sh
+# source ./config_iterm.sh
 source ./config_itunes.sh
 source ./config_keyboard.sh
 source ./config_mail.sh
@@ -42,7 +42,7 @@ function config
   config_fish
   config_git
   config_global
-  config_iterm
+  # config_iterm
   config_itunes
   config_keyboard
   config_mail

@@ -28,7 +28,7 @@ function apps
   brew cask install evernote
   brew cask install f-lux
   brew cask install google-chrome
-  brew cask install iterm2
+  # brew cask install iterm2
   brew cask install paw
   brew cask install reveal
   brew cask install sourcetree
