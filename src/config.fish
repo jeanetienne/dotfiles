@@ -1,25 +1,25 @@
-set PATH "/usr/local/opt/ruby/bin:/usr/local/share/npm/bin" $PATH
+
+# For Homebrew (brew.sh)
+set -x PATH "/usr/local/bin:$PATH"
+
+# For Cask (caskroom.io)
+set -x HOMEBREW_CASK_OPTS "--caskroom=~/Documents/Caskroom --appdir=~/Applications"
 
 # Make Sublime the default editor
-set --export EDITOR "subl -w"
+set -x EDITOR "subl -w"
  
 # Make Sublime usable with git
-set --export GIT_EDITOR "subl -w"
+set -x GIT_EDITOR "subl -w"
 
 # Aliases
 alias g="git"
 alias o="open ."
 alias ow="open *.xcworkspace"
 alias ox="open *.xcodeproj"
-alias op="open *.podspec"
 alias on="open ~/Desktop/notes.txt"
-alias oh="open /etc/hosts"
 alias ofc="mate ~/.config/fish/config.fish"
 alias ofh="mate ~/.config/fish/fish_history"
-alias oar="mate /usr/bin/anzroutes"
 alias rmdd="rm -rf ~/Library/Developer/Xcode/DerivedData"
-alias rt="sudo anzroutes"
-alias rke="bundle exec rake"
 
 set -x fish_color_status red
 set -x fish_color_git_prompt cyan

@@ -1,6 +1,0 @@
-
-# For homebrew
-export PATH="/usr/local/bin:$PATH"
-
-# For cask
-export HOMEBREW_CASK_OPTS="--caskroom=~/Documents/Caskroom --appdir=/Applications"
