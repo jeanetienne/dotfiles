@@ -5,12 +5,10 @@
 
 function apps
 {
-  # .bash_profile
-  cat ./src/bash_profile >> ~/.bash_profile
-  source ~/.bash_profile
-
   # Homebrew
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  mkdir -p ~/Documents/Homebrew
+  curl -L https://github.com/Homebrew/homebrew/tarball/master | tar xz --strip 1 -C ~/Documents/Homebrew
+  ln -s ~/Documents/Homebrew/bin/brew /usr/local/bin/brew
 
   # Homebrew
   brew update
