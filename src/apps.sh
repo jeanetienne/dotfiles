@@ -8,11 +8,12 @@ function apps
   # Homebrew
   mkdir -p ~/Documents/Homebrew
   curl -L https://github.com/Homebrew/homebrew/tarball/master | tar xz --strip 1 -C ~/Documents/Homebrew
-  ln -s ~/Documents/Homebrew/bin/brew /usr/local/bin/brew
+  sudo mkdir -p /usr/local/bin
+  sudo ln -s ~/Documents/Homebrew/bin/brew /usr/local/bin/brew
 
   # Homebrew
-  brew update
   brew doctor
+  brew update
 
   # CLI apps
   brew install ruby
@@ -41,7 +42,6 @@ function apps
   brew cask install qlcolorcode
   brew cask install quicklook-json
   brew cask install qlmarkdown
-  brew cask install suspicious-package
 
   echo ""
   echo "App install finished."
