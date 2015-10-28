@@ -15,7 +15,7 @@ function config_global
   sudo systemsetup -setusingnetworktime on
 
   # Set the server for network time
-  sudo systemsetup -setnetworktimeserver time.asia.apple.com.
+  sudo systemsetup -setNetworkTimeServer time.asia.apple.com.
 
   # Set the timezone. See 'systemsetup -listtimezones' for other values
   sudo systemsetup -settimezone "Australia/Melbourne" > /dev/null
