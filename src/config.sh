@@ -4,7 +4,6 @@
 # https://github.com/mathiasbynens/dotfiles/blob/master/.osx
 # https://github.com/chrisrickard/laptop.osx
 
-# source ./config_iterm.sh
 source ./src/config_app_store.sh
 source ./src/config_contacts.sh
 source ./src/config_disk_utility.sh
@@ -42,7 +41,6 @@ function config
   config_fish
   config_git
   config_global
-  # config_iterm
   config_itunes
   config_keyboard
   config_mail
