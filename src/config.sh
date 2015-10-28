@@ -4,27 +4,27 @@
 # https://github.com/mathiasbynens/dotfiles/blob/master/.osx
 # https://github.com/chrisrickard/laptop.osx
 
-source ./config_app_store.sh
-source ./config_contacts.sh
-source ./config_disk_utility.sh
-source ./config_display.sh
-source ./config_dock.sh
-source ./config_finder.sh
-source ./config_fish.sh
-source ./config_git.sh
-source ./config_global.sh
 # source ./config_iterm.sh
-source ./config_itunes.sh
-source ./config_keyboard.sh
-source ./config_mail.sh
-source ./config_messages.sh
-source ./config_power_management.sh
-source ./config_safari.sh
-source ./config_screen_saver.sh
-source ./config_spotlight.sh
-source ./config_terminal.sh
-source ./config_time_machine.sh
-source ./config_trackpad.sh
+source ./src/config_app_store.sh
+source ./src/config_contacts.sh
+source ./src/config_disk_utility.sh
+source ./src/config_display.sh
+source ./src/config_dock.sh
+source ./src/config_finder.sh
+source ./src/config_fish.sh
+source ./src/config_git.sh
+source ./src/config_global.sh
+source ./src/config_itunes.sh
+source ./src/config_keyboard.sh
+source ./src/config_mail.sh
+source ./src/config_messages.sh
+source ./src/config_power_management.sh
+source ./src/config_safari.sh
+source ./src/config_screen_saver.sh
+source ./src/config_spotlight.sh
+source ./src/config_terminal.sh
+source ./src/config_time_machine.sh
+source ./src/config_trackpad.sh
 
 function config
 {
@@ -63,5 +63,3 @@ function config
   echo ""
   echo "Please restart."
 }
-
-config
