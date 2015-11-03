@@ -27,21 +27,12 @@ function apps
   brew cask install evernote
   brew cask install flux
   brew cask install google-chrome
-  # brew cask install iterm2
   brew cask install paw
   brew cask install reveal
   brew cask install sourcetree
   brew cask install textmate
   brew cask install the-unarchiver
-  brew cask install utorrent
   brew cask install vlc
-
-  # QuickLook plugins
-  brew cask install provisioning
-  brew cask install qlstephen
-  brew cask install qlcolorcode
-  brew cask install quicklook-json
-  brew cask install qlmarkdown
 
   echo ""
   echo "App install finished."
