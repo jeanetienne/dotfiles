@@ -15,6 +15,7 @@ source ./src/config_finder.sh
 source ./src/config_fish.sh
 source ./src/config_git.sh
 source ./src/config_global.sh
+source ./src/config_hammerspoon.sh
 source ./src/config_itunes.sh
 source ./src/config_keyboard.sh
 source ./src/config_mail.sh
@@ -57,6 +58,7 @@ function config
 
   config_fish
   config_cask
+  config_hammerspoon
 
   echo "Setup finished."
   echo "Areas not covered by this script:"
