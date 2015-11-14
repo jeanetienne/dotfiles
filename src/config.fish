@@ -5,11 +5,11 @@ set -x PATH "/usr/local/bin:$PATH"
 # For Cask (caskroom.io)
 set -x HOMEBREW_CASK_OPTS "--caskroom=~/Documents/Caskroom --appdir=~/Applications"
 
-# Make Sublime the default editor
-set -x EDITOR "subl -w"
+# Make TextMate the default editor
+set -x EDITOR "/usr/local/bin/mate -w"
  
-# Make Sublime usable with git
-set -x GIT_EDITOR "subl -w"
+# Make TextMate usable with git
+set -x GIT_EDITOR "/usr/local/bin/mate -w"
 
 # Aliases
 alias g="git"

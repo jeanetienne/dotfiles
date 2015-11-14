@@ -9,13 +9,13 @@ function config_global
   sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "jeanetienne"
 
   # Allow remote login
-  sudo systemsetup -setremotelogin on
+  sudo systemsetup -setremotelogin on > /dev/null
 
   # Set network time to on
-  sudo systemsetup -setusingnetworktime on
+  sudo systemsetup -setusingnetworktime on > /dev/null
 
   # Set the server for network time
-  sudo systemsetup -setNetworkTimeServer time.asia.apple.com.
+  sudo systemsetup -setNetworkTimeServer time.asia.apple.com. > /dev/null
 
   # Set the timezone. See 'systemsetup -listtimezones' for other values
   sudo systemsetup -settimezone "Australia/Melbourne" > /dev/null
@@ -30,7 +30,7 @@ function config_global
   sudo nvram SystemAudioVolume=" "
 
   # Enable Dark mode
-  defaults write AppleInterfaceStyle Dark
+  defaults write NSGlobalDomain AppleInterfaceStyle Dark
 
   # Power button shows shutdown dialog
   defaults write com.apple.loginwindow PowerButtonSleepsSystem -bool FALSE
