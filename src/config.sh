@@ -5,6 +5,8 @@
 # https://github.com/chrisrickard/laptop.osx
 
 source ./src/config_app_store.sh
+source ./src/config_cask.sh
+source ./src/config_command_line.sh
 source ./src/config_contacts.sh
 source ./src/config_disk_utility.sh
 source ./src/config_display.sh
@@ -32,15 +34,15 @@ function config
   # Keep-alive: update existing 'sudo' time stamp until the whole script has finished
   while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
+  config_global
+  config_command_line
   config_app_store
   config_contacts
   config_disk_utility
   config_display
   config_dock
   config_finder
-  config_fish
   config_git
-  config_global
   config_itunes
   config_keyboard
   config_mail
@@ -52,6 +54,9 @@ function config
   config_terminal
   config_time_machine
   config_trackpad
+
+  config_fish
+  config_cask
 
   echo "Setup finished."
   echo "Areas not covered by this script:"
