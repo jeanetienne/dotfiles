@@ -1,15 +1,15 @@
 
 # For Homebrew (brew.sh)
-set -x PATH "/usr/local/bin:$PATH"
+set PATH $PATH /usr/local/bin
 
 # For Cask (caskroom.io)
-set -x HOMEBREW_CASK_OPTS "--caskroom=~/Documents/Caskroom --appdir=~/Applications"
+set HOMEBREW_CASK_OPTS "--caskroom=~/Documents/Caskroom --appdir=~/Applications"
 
 # Make TextMate the default editor
-set -x EDITOR "/usr/local/bin/mate -w"
+set EDITOR "/usr/local/bin/mate -w"
  
 # Make TextMate usable with git
-set -x GIT_EDITOR "/usr/local/bin/mate -w"
+set GIT_EDITOR "/usr/local/bin/mate -w"
 
 # Aliases
 alias g="git"
