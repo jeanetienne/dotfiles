@@ -6,7 +6,6 @@ function config_cask
 	brew cask install cyberduck
 	brew cask install dash
 	brew cask install dropbox
-	brew cask install evernote
 	brew cask install flux
 	brew cask install hammerspoon
 	brew cask install paw
