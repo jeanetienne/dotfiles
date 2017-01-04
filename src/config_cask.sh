@@ -2,6 +2,9 @@
 
 function config_cask
 {
+    # Duplicating fish config as at this stage of the config, we're not yet in a fish shell
+    HOMEBREW_CASK_OPTS="--appdir=~/Applications"
+    
     # Main Mac apps
     brew cask install cyberduck
     brew cask install dash
