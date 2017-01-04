@@ -3,6 +3,7 @@ Areas not covered by this script:
   - Setup the screensaver.
   - Setup the clock and power icons in the menu bar.
   - Set the default column width in column view.
+  - Create SSH keys and set them on GitHub.
 
 To install apps use the following commands:
 

@@ -29,5 +29,5 @@ function config
     config_cask
     config_hammerspoon
 
-    cat post_install_message.txt
+    cat ./src/post_install_message.txt
 }
