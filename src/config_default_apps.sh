@@ -8,6 +8,14 @@ function config_default_apps
     # Enable Debug Menu in the Mac App Store
     defaults write com.apple.appstore ShowDebugMenu -bool TRUE
 
+    # Enabling auto updates for apps and OS updates
+    defaults write /Library/Preferences/com.apple.commerce AutoUpdate -bool TRUE
+    defaults write /Library/Preferences/com.apple.commerce AutoUpdateRestartRequired -bool TRUE
+
+    # Enable automatically checking for updates
+    softwareupdate --schedule on
+    defaults write /Library/Preferences/com.apple.SoftwareUpdate AutomaticCheckEnabled -bool TRUE
+
     echo "-> finished configuring 'App Store'"
 
     # Enable the debug menu in Address Book
@@ -65,7 +73,7 @@ function config_default_apps
     # Reset Launchpad
     rm ~/Library/Application\ Support/Dock/*.db
     defaults write com.apple.dock ResetLaunchPad -bool TRUE
-  
+
     # Add a spacer to the left side of the Dock (where the applications are)
     # defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'
 
@@ -96,7 +104,7 @@ function config_default_apps
     defaults write com.apple.dock wvous-bl-modifier -int 0
     defaults write com.apple.dock wvous-br-corner -int 10
     defaults write com.apple.dock wvous-br-modifier -int 0
-  
+
     # Disable Dashboard
     defaults write com.apple.dashboard enabled-state -int 1
 
@@ -212,7 +220,7 @@ function config_default_apps
 
     # Turn off keyboard illumination when computer is not used for 1 minute
     defaults write com.apple.BezelServices kDimTime -int 60
-  
+
     echo "-> finished configuring 'Keyboard'"
 
     # Don't dim screen when changing power source
@@ -261,7 +269,7 @@ function config_default_apps
     # Display & computer sleep time for battery mode
     sudo pmset -b displaysleep 5
     sudo pmset -b sleep 10
-  
+
     echo "-> finished configuring 'Power Management'"
 
     # Set home page to 'about:blank'
@@ -319,7 +327,7 @@ function config_default_apps
 
     # Only use UTF-8 in Terminal.app
     defaults write com.apple.Terminal StringEncodings -array 4
-  
+
     # Open my custom profile to load it, and close the window
     open ./src/jeanetienne.terminal -a Terminal.app
 
