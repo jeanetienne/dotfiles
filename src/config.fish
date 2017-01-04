@@ -1,15 +1,15 @@
 
 # For Homebrew (brew.sh)
-set PATH $PATH /usr/local/bin
+set -x PATH /usr/local/bin $PATH
 
 # For Cask (caskroom.io)
-set HOMEBREW_CASK_OPTS "--caskroom=~/Documents/Caskroom --appdir=~/Applications"
+set -x HOMEBREW_CASK_OPTS --appdir=~/Applications
 
 # Make TextMate the default editor
-set EDITOR "/usr/local/bin/mate -w"
+set -x EDITOR "/usr/local/bin/mate -w"
  
 # Make TextMate usable with git
-set GIT_EDITOR "/usr/local/bin/mate -w"
+set -x GIT_EDITOR "/usr/local/bin/mate -w"
 
 # Aliases
 alias g="git"
@@ -18,7 +18,6 @@ alias ow="open *.xcworkspace"
 alias ox="open *.xcodeproj"
 alias on="open ~/Desktop/notes.txt"
 alias ofc="mate ~/.config/fish/config.fish"
-alias ofh="mate ~/.config/fish/fish_history"
 alias rmdd="rm -rf ~/Library/Developer/Xcode/DerivedData"
 
 set -x fish_color_status red

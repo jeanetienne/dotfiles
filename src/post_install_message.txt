@@ -1,0 +1,35 @@
+Setup finished.
+Areas not covered by this script:
+  - Setup the screensaver.
+  - Setup the clock and power icons in the menu bar.
+  - Set the default column width in column view.
+
+To install apps use the following commands:
+
+Xcode:
+mas install 497799835
+
+Aperture:
+mas install 408981426
+
+Apple Configurator 2:
+mas install 1037126344
+
+Pocket:
+mas install 568494494
+
+Pixelmator:
+mas install 407963104
+
+Keynote:
+mas install 409183694
+
+Pages:
+mas install 409201541
+
+Numbers:
+mas install 409203825
+
+iMovie:
+mas install 408981434
+
