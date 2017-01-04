@@ -148,9 +148,6 @@ function config_default_apps
     # Four-letter codes for the other view modes: icnv, clmv, Flwv, Nlsv
     defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
 
-    # Allow text selection in Quick Look
-    defaults write com.apple.finder QLEnableTextSelection -bool TRUE
-
     # When performing a search, search the current folder by default
     defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
