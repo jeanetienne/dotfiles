@@ -4,8 +4,8 @@
 # https://github.com/mathiasbynens/dotfiles/blob/master/.osx
 # https://github.com/chrisrickard/laptop.osx
 
+source ./src/config_brew.sh
 source ./src/config_cask.sh
-source ./src/config_command_line.sh
 source ./src/config_default_apps.sh
 source ./src/config_fish.sh
 source ./src/config_git.sh
@@ -20,7 +20,7 @@ function config
   while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
   config_global
-  config_command_line
+  config_brew
   config_default_apps
   config_git
   config_fish
