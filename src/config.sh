@@ -11,6 +11,7 @@ source ./src/config_fish.sh
 source ./src/config_git.sh
 source ./src/config_global.sh
 source ./src/config_hammerspoon.sh
+source ./src/config_xcode.sh
 
 function config
 {
@@ -22,6 +23,7 @@ function config
     config_global
     config_brew
     config_default_apps
+    config_xcode
     config_git
     config_fish
     config_cask
