@@ -4,29 +4,13 @@
 # https://github.com/mathiasbynens/dotfiles/blob/master/.osx
 # https://github.com/chrisrickard/laptop.osx
 
-source ./src/config_app_store.sh
 source ./src/config_cask.sh
 source ./src/config_command_line.sh
-source ./src/config_contacts.sh
-source ./src/config_disk_utility.sh
-source ./src/config_display.sh
-source ./src/config_dock.sh
-source ./src/config_finder.sh
+source ./src/config_default_apps.sh
 source ./src/config_fish.sh
 source ./src/config_git.sh
 source ./src/config_global.sh
 source ./src/config_hammerspoon.sh
-source ./src/config_itunes.sh
-source ./src/config_keyboard.sh
-source ./src/config_mail.sh
-source ./src/config_messages.sh
-source ./src/config_power_management.sh
-source ./src/config_safari.sh
-source ./src/config_screen_saver.sh
-source ./src/config_spotlight.sh
-source ./src/config_terminal.sh
-source ./src/config_time_machine.sh
-source ./src/config_trackpad.sh
 
 function config
 {
@@ -37,25 +21,8 @@ function config
 
   config_global
   config_command_line
-  config_app_store
-  config_contacts
-  config_disk_utility
-  config_display
-  config_dock
-  config_finder
+  config_default_apps
   config_git
-  config_itunes
-  config_keyboard
-  config_mail
-  config_messages
-  config_power_management
-  config_safari
-  config_screen_saver
-  config_spotlight
-  config_terminal
-  config_time_machine
-  config_trackpad
-
   config_fish
   config_cask
   config_hammerspoon
