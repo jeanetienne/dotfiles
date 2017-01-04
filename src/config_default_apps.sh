@@ -198,6 +198,9 @@ function config_default_apps
     # Enable "Prevent iPods, iPhones, and iPads from syncing automatically"
     defaults write com.apple.iTunes dontAutomaticallySyncIPods -bool TRUE
 
+    # Disable the pop-up to ask you to update your iOS devices when plugged
+    com.apple.itunes disableCheckForDeviceUpdates -bool YES
+
     echo "-> finished configuring 'iTunes'"
 
     # Set a blazingly fast keyboard repeat rate
