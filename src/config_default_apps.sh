@@ -304,6 +304,12 @@ function config_default_apps
     defaults write com.apple.screensaver askForPassword -int 1
     defaults write com.apple.screensaver askForPasswordDelay -int 1
 
+    # Tab navigation shortcuts
+    defaults write -app Safari NSUserKeyEquivalents '{
+        "Show Next Tab" = "@~\\U2192";
+        "Show Previous Tab" = "@~\\U2190";
+    }'
+
     echo "-> finished configuring 'Screen Saver'"
 
     # Disable Spotlight indexing for any volume that gets mounted and has not yet
@@ -321,6 +327,12 @@ function config_default_apps
     sudo mdutil -E / > /dev/null
 
     echo "-> finished configuring 'Spotlight'"
+
+    # Tab navigation shortcuts
+    defaults write -app Terminal NSUserKeyEquivalents '{
+            "Show Next Tab" = "@~\\U2192";
+            "Show Previous Tab" = "@~\\U2190";
+        }'
 
     # Only use UTF-8 in Terminal.app
     defaults write com.apple.Terminal StringEncodings -array 4
