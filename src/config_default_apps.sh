@@ -119,6 +119,9 @@ function config_default_apps
 
     echo "-> finished configuring 'Dock & Dashboard'"
 
+    # Enable fast switching with full name in the status bar
+    sudo defaults write /Library/Preferences/.GlobalPreferences MultipleSessionEnabled -bool TRUE
+
     # Disable window animations and Get Info animations
     defaults write com.apple.finder DisableAllAnimations -bool TRUE
 
