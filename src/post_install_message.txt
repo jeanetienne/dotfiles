@@ -35,7 +35,6 @@ Areas not covered by this script:
     - Create SSH keys and set them on GitHub
     - Copy Aperture library
     - Copy iTunes library
-    - 
 
 Apps from the Mac App Store:
 
