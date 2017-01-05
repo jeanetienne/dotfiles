@@ -8,4 +8,4 @@ sudo -v
 # Main setup
 config
 
-echo "✅ Deploy script finished."
+echo "✅  Deploy script finished."
