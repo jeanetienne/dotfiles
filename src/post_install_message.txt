@@ -1,38 +1,70 @@
-Setup finished.
-Areas not covered by this script:
-  - Setup the screensaver.
-  - Setup the clock and power icons in the menu bar.
-  - Set the default column width in column view.
-  - Create SSH keys and set them on GitHub.
+Initial setup finished.
 
-To install apps use the following commands:
+Areas not covered by this script:
+    - iCloud
+        - Login
+        - Open all iCloud apps to trigger first sync (Notes, Calendar, Messages, etc.)
+        - Enable "Back to My Mac"
+        - Enable "Find My Mac"
+        - Disable "Photos"
+        - Enable iMessage/SMS/Call forwarding from iPhone
+    - Internet accounts
+        - Login for all service
+    - Login to Dropbox
+    - Setup flux
+    - Setup the desktop and screensaver images
+    - Status bar
+        - Show clock with date and seconds
+        - Show battery percentage
+    - Setup the clock and power icons in the menu bar
+    - Disable Mission Control Shortcut "Move left/right space" to enable Ctrl + Arrow Key to jump to next word
+    - Xcode
+        - Install
+        - Accept license: sudo xcodebuild -license accept
+        - Install Command Line Tools: xcode-select --install
+        - Enable Developer mode: sudo DevToolsSecurity -enable
+        - Continue building after errors
+        - Show line numbers
+        - Set style to Dusk and font to Fira Code
+        - Set tab navigation shortcuts
+    - TextMate
+        - Opening behaviour
+        - Show file browser on left
+        - Terminal integration
+        - Disable rmate connections
+    - Create SSH keys and set them on GitHub
+    - Copy Aperture library
+    - Copy iTunes library
+    - 
+
+Apps from the Mac App Store:
 
 Xcode:
-mas install 497799835
+mas install 497799835 > /dev/null &
 
 Aperture:
-mas install 408981426
+mas install 408981426 > /dev/null &
 
 Apple Configurator 2:
-mas install 1037126344
+mas install 1037126344 > /dev/null &
 
 Pocket:
-mas install 568494494
+mas install 568494494 > /dev/null &
 
 Pixelmator:
-mas install 407963104
+mas install 407963104 > /dev/null &
 
 Keynote:
-mas install 409183694
+mas install 409183694 > /dev/null &
 
 Pages:
-mas install 409201541
+mas install 409201541 > /dev/null &
 
 Numbers:
-mas install 409203825
+mas install 409203825 > /dev/null &
 
 iMovie:
-mas install 408981434
+mas install 408981434 > /dev/null &
 
 Apps from Cask:
 brew cask install cyberduck
