@@ -34,3 +34,10 @@ mas install 409203825
 iMovie:
 mas install 408981434
 
+Apps from Cask:
+brew cask install cyberduck
+brew cask install dash
+brew cask install paw
+brew cask install sourcetree
+brew cask install the-unarchiver
+brew cask install vlc
