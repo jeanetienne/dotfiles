@@ -5,7 +5,6 @@
 # https://github.com/chrisrickard/laptop.osx
 
 source ./src/config_brew.sh
-source ./src/config_cask.sh
 source ./src/config_default_apps.sh
 source ./src/config_fish.sh
 source ./src/config_git.sh
@@ -24,7 +23,6 @@ function config
     config_default_apps
     config_git
     config_fish
-    config_cask
     config_hammerspoon
 
     cat ./src/post_install_message.txt
