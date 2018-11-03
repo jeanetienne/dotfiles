@@ -1,9 +1,20 @@
 
+# Disable fish greeting
+set -U fish_greeting ""
+
 # For Homebrew (brew.sh)
 set -x PATH /usr/local/bin $PATH
+set -x HOMEBREW_NO_ANALYTICS 1
 
 # For Cask (caskroom.io)
 set -x HOMEBREW_CASK_OPTS --appdir=~/Applications
+
+# For Fastlane
+set -x PATH $HOME/.fastlane/bin $PATH
+
+set -x LC_ALL en_US.UTF-8
+set -x LANG en_US.UTF-8
+set -x APPLE_ID apple@jeanetienne.net
 
 # Make TextMate the default editor
 set -x EDITOR "/usr/local/bin/mate -w"
