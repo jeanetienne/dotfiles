@@ -307,11 +307,6 @@ function config_default_apps
 
   echo "-> finished configuring 'Screen Saver'"
 
-  # Disable Spotlight indexing for any volume that gets mounted and has not yet
-  # been indexed before.
-  # Use 'sudo mdutil -i off "/Volumes/foo"' to stop indexing any volume.
-  sudo defaults write /.Spotlight-V100/VolumeConfiguration Exclusions -array "/Volumes"
-
   # Load new settings before rebuilding the index
   killall mds > /dev/null 2>&1
 
@@ -353,11 +348,6 @@ function config_default_apps
   defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool TRUE
   defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
   defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
-
-  # Use scroll gesture with the Ctrl (^) modifier key to zoom, and follows the keyboard focus while zoomed in
-  defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool TRUE
-  defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
-  defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool TRUE
 
   echo "-> finished configuring 'Trackpad'"
   
