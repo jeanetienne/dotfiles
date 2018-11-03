@@ -8,14 +8,6 @@ function config_default_apps
   # Enable Debug Menu in the Mac App Store
   defaults write com.apple.appstore ShowDebugMenu -bool TRUE
 
-  # Enabling auto updates for apps and OS updates
-  defaults write /Library/Preferences/com.apple.commerce AutoUpdate -bool TRUE
-  defaults write /Library/Preferences/com.apple.commerce AutoUpdateRestartRequired -bool TRUE
-
-  # Enable automatically checking for updates
-  softwareupdate --schedule on
-  defaults write /Library/Preferences/com.apple.SoftwareUpdate AutomaticCheckEnabled -bool TRUE
-
   echo "-> finished configuring 'App Store'"
 
   # Enable the debug menu in Address Book

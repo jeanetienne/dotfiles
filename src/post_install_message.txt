@@ -10,6 +10,7 @@ Areas not covered by this script:
     - Enable iMessage/SMS/Call forwarding from iPhone
   - Internet accounts
     - Login for all service
+  - Enable auto updated for App Store and macOS updates
   - Login to Dropbox
   - Setup the desktop and screensaver images
   - Status bar
