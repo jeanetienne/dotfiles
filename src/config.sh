@@ -4,6 +4,7 @@
 # https://github.com/mathiasbynens/dotfiles/blob/master/.osx
 # https://github.com/chrisrickard/laptop.osx
 
+source ./src/config_aperture.sh
 source ./src/config_brew.sh
 source ./src/config_default_apps.sh
 source ./src/config_fish.sh
@@ -24,6 +25,7 @@ function config
     config_git
     config_fish
     config_hammerspoon
+  config_aperture
 
     cat ./src/post_install_message.txt
 }
