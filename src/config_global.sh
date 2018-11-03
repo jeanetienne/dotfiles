@@ -26,8 +26,8 @@ function config_global
   defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
   defaults write NSGlobalDomain AppleMetricUnits -bool TRUE
 
-  # Disable the sound effects on boot
-  sudo nvram SystemAudioVolume=" "
+  # Hide hard drive on Desktop
+  defaults write com.apple.finder ShowHardDrivesOnDesktop -bool false
 
   # Enable Dark mode
   defaults write NSGlobalDomain AppleInterfaceStyle Dark
