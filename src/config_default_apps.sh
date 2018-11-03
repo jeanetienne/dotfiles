@@ -199,7 +199,7 @@ function config_default_apps
   defaults write com.apple.iTunes dontAutomaticallySyncIPods -bool TRUE
 
   # Disable the pop-up to ask you to update your iOS devices when plugged
-  com.apple.itunes disableCheckForDeviceUpdates -bool YES
+  defaults write com.apple.iTunes disableCheckForDeviceUpdates -bool YES
 
   echo "-> finished configuring 'iTunes'"
 
