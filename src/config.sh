@@ -11,6 +11,7 @@ source ./src/config_fish.sh
 source ./src/config_git.sh
 source ./src/config_global.sh
 source ./src/config_hammerspoon.sh
+source ./src/config_xcode.sh
 
 function config
 {
@@ -25,6 +26,7 @@ function config
     config_git
     config_fish
     config_hammerspoon
+  config_xcode
   config_aperture
 
     cat ./src/post_install_message.txt
