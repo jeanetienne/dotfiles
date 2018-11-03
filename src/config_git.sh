@@ -2,13 +2,13 @@
 
 function config_git
 {
-    # User
-    git config --global user.email "git@jeanetienne.net"
-    git config --global user.name "Jean-Étienne"
+  # User
+  git config --global user.email "git@jeanetienne.net"
+  git config --global user.name "Jean-Étienne"
 
-    # Config
-    git config --global --add pull.default current
-    git config --global --add push.default current
+  # Config
+  git config --global pull.default current
+  git config --global push.default current
   git config --global credential.helper osxkeychain
 
   # Basic aliases
@@ -23,5 +23,5 @@ function config_git
   git config --global alias.rba rebase --abort;
     
 
-    echo "✅  finished configuring 'Git'"
+  echo "✅  finished configuring 'Git'"
 }
