@@ -36,39 +36,7 @@ Areas not covered by this script:
     - Copy Aperture library
     - Copy iTunes library
 
-Apps from the Mac App Store:
 
-Xcode:
-mas install 497799835 > /dev/null &
+Now run:
 
-Aperture:
-mas install 408981426 > /dev/null &
-
-Apple Configurator 2:
-mas install 1037126344 > /dev/null &
-
-Pocket:
-mas install 568494494 > /dev/null &
-
-Pixelmator:
-mas install 407963104 > /dev/null &
-
-Keynote:
-mas install 409183694 > /dev/null &
-
-Pages:
-mas install 409201541 > /dev/null &
-
-Numbers:
-mas install 409203825 > /dev/null &
-
-iMovie:
-mas install 408981434 > /dev/null &
-
-Apps from Cask:
-brew cask install cyberduck
-brew cask install dash
-brew cask install paw
-brew cask install sourcetree
-brew cask install the-unarchiver
-brew cask install vlc
+brew bundle
