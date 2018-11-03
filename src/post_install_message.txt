@@ -1,41 +1,48 @@
 Initial setup finished.
 
 Areas not covered by this script:
-    - iCloud
-        - Login
-        - Open all iCloud apps to trigger first sync (Notes, Calendar, Messages, etc.)
-        - Enable "Back to My Mac"
-        - Enable "Find My Mac"
-        - Disable "Photos"
-        - Enable iMessage/SMS/Call forwarding from iPhone
-    - Internet accounts
-        - Login for all service
-    - Login to Dropbox
-    - Setup flux
-    - Setup the desktop and screensaver images
-    - Status bar
-        - Show clock with date and seconds
-        - Show battery percentage
-    - Setup the clock and power icons in the menu bar
-    - Disable Mission Control Shortcut "Move left/right space" to enable Ctrl + Arrow Key to jump to next word
-    - Xcode
-        - Install
-        - Accept license: sudo xcodebuild -license accept
-        - Install Command Line Tools: xcode-select --install
-        - Enable Developer mode: sudo DevToolsSecurity -enable
-        - Continue building after errors
-        - Show line numbers
-        - Set style to Dusk and font to Fira Code
-        - Set tab navigation shortcuts
-    - TextMate
-        - Opening behaviour
-        - Show file browser on left
-        - Terminal integration
-        - Disable rmate connections
-    - Create SSH keys and set them on GitHub
-    - Copy Aperture library
-    - Copy iTunes library
-
+  - iCloud
+    - Login
+    - Open all iCloud apps to trigger first sync (Notes, Calendar, Messages, etc.)
+    - Enable "Back to My Mac"
+    - Enable "Find My Mac"
+    - Disable "Photos"
+    - Enable iMessage/SMS/Call forwarding from iPhone
+  - Internet accounts
+    - Login for all service
+  - Login to Dropbox
+  - Setup the desktop and screensaver images
+  - Status bar
+    - Show clock with date and seconds
+    - Show battery percentage
+  - Setup the clock and power icons in the menu bar
+  - Customise system extensions, share menu
+  - Customise Notification Center
+    - Widgets
+    - Settings: Sort order = "Recent by App"
+  - Disable Mission Control Shortcut "Move left/right space" to enable Ctrl + Arrow Key to jump to next word
+  - Disable spell check: System Preferences > Keyboard > Text > Correct spelling automatically
+  - Safari
+    - Always show tabs
+  - Xcode
+    - Install
+    - Accept license: sudo xcodebuild -license accept
+    - Install Command Line Tools: xcode-select --install
+    - Enable Developer mode: sudo DevToolsSecurity -enable
+    - Continue building after errors
+    - Show line numbers
+    - Set style to Dusk and font to Fira Code
+  - TextMate
+    - Opening behaviour
+    - Show file browser on left
+    - Terminal integration
+    - Disable rmate connections
+  - Create SSH keys and set them on:
+     - GitHub
+     - Bitbucket
+  - Copy Aperture library
+  - Copy iTunes library
+  - Check /Library/Application Support/iLifeMediaBrowser/Plug-Ins for superfluous plugins (helps the screensaver to load)
 
 Now run:
 
