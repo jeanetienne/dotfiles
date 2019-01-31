@@ -10,13 +10,14 @@ Areas not covered by this script:
     - Enable iMessage/SMS/Call forwarding from iPhone
   - Internet accounts
     - Login for all service
-  - Enable auto updated for App Store and macOS updates
+  - Enable auto updates for App Store and macOS updates
   - Login to Dropbox
   - Setup the desktop and screensaver images
   - Status bar
     - Show clock with date and seconds
     - Show battery percentage
-  - Setup the clock and power icons in the menu bar
+	- Show keyboard input menu
+	- Show sound menu
   - Customise system extensions, share menu
   - Customise Notification Center
     - Widgets
