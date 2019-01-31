@@ -35,6 +35,5 @@ mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Pixelmator Pro", id: 1289583905
-mas "Pocket", id: 568494494
 mas "Spark", id: 1176895641
 mas "Xcode", id: 497799835
