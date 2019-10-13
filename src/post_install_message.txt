@@ -45,8 +45,8 @@ Areas not covered by this script:
         - Zoom: Enable "Use scroll gesture with modifier keys to zoom"
         - Mouse & Trackpad: Set "Spring-loading delay" to "Short"
 - iCloud
-    - Open all iCloud apps to trigger first sync (Notes, Calendar, Messages, Safari, Reminders, Contacts, Keychain)
-    - Enable iMessage/SMS/Call forwarding from iPhone
+    - Open all iCloud apps to trigger first sync (Calendar, Contacts, Keychain, Messages, Reminders, Safari, Notes)
+    - Coordinate iMessage/SMS/Call forwarding from iPhone
 - Customise Today View widgets
 - Menu bar
     - Setup Dato
@@ -70,6 +70,9 @@ Areas not covered by this script:
 - Create SSH keys and set them on:
      - GitHub
      - Bitbucket
-- Copy iTunes library
-- Copy Cyberduck Preferences and Bookmarks
+- Copy (from latest Time Machine backup)
+    - Music library
+    - Photos
+    - Desktop
+    - Cyberduck Preferences and Bookmarks
 - Check /Library/Application Support/iLifeMediaBrowser/Plug-Ins for superfluous plugins (helps the screensaver to load)
