@@ -72,7 +72,8 @@ Areas not covered by this script:
      - Bitbucket
 - Copy (from latest Time Machine backup)
     - Music library
-    - Photos
+    - Photos.app Library
     - Desktop
+    - Downloads
     - Cyberduck Preferences and Bookmarks
 - Check /Library/Application Support/iLifeMediaBrowser/Plug-Ins for superfluous plugins (helps the screensaver to load)
