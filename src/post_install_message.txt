@@ -1,32 +1,59 @@
 Initial setup finished.
 
 Areas not covered by this script:
-  - iCloud
-    - Login
-    - Open all iCloud apps to trigger first sync (Notes, Calendar, Messages, etc.)
-    - Enable "Back to My Mac"
-    - Enable "Find My Mac"
-    - Disable "Photos"
+- System Preferences
+    - Desktop and Screen Saver: Set custom images
+    - Security and Privacy > General: Allow you Apple Watch to unlock Mac
+    - Spotlight > Privacy: Exclude /Library and /Volumes (invisible)
+    - Notifications: Notification Centre sort order: "Recents by App"
+    - Displays: Disable "Automatically adjust brightness", and enable Nigh Shift
+    - Keyboard:
+        - Keyboard:
+            - Customise Touch Bar…
+        - Text:
+             - Disable "Correct spelling automatically"
+        - Shortcuts:
+            - Mission Control: Disable "Move left/right a space" (to enable Ctrl + Arrow Key to jump to next word)
+            - Define custom keyboard shortcuts:
+                - Notes.app
+                    - Strike-through ⌥+CMD+S
+                - Terminal.app
+                    - Show Previous Tab ⌥+CMD+←
+                    - Show Next Tab ⌥+CMD+→
+                - Mail.app
+                    - Send CMD+Return
+            - Input Sources: Show Input menu in menu bar
+    - Sound: Show volume in menu bar
+    - iCloud: 
+        - Login
+        - Customise iCloud Drive (enable only Books, Keynote, Numbers, Pages, Reminders, Weather, Maps, System Preferences)
+        - Disable "Photos"
+        - Disable "Mail"
+        - Enable "Find My Mac"
+    - Internet accounts: Login for all services
+    - Software Updates: 
+        - Enable: "Automatically keep my mac up to date"
+        - Enable all "Advanced…" options
+    - Extensions
+        - Disable Dropbox, WeChat
+        - Add Scale Image as a "Finder Quick Action"
+    - Time Machine
+        - Exclude other external volumes
+        - Exclude /Applications, /Library, /Users/{GUest,Shared}, ~/\.*, System Files and Applications
+        - Show Time Machine in menu bar
+    - Accessibility
+        - Zoom: Enable "Use scroll gesture with modifier keys to zoom"
+        - Mouse & Trackpad: Set "Spring-loading delay" to "Short"
+- iCloud
+    - Open all iCloud apps to trigger first sync (Notes, Calendar, Messages, Safari, Reminders, Contacts, Keychain)
     - Enable iMessage/SMS/Call forwarding from iPhone
-  - Internet accounts
-    - Login for all service
-  - Enable auto updates for App Store and macOS updates
-  - Login to Dropbox
-  - Setup the desktop and screensaver images
-  - Status bar
-    - Show clock with date and seconds
-    - Show battery percentage
-	- Show keyboard input menu
-	- Show sound menu
-  - Customise system extensions, share menu
-  - Customise Notification Center
-    - Widgets
-    - Settings: Sort order = "Recent by App"
-  - Disable Mission Control Shortcut "Move left/right space" to enable Ctrl + Arrow Key to jump to next word
-  - Disable spell check: System Preferences > Keyboard > Text > Correct spelling automatically
-  - Safari
+- Customise Today View widgets
+- Menu bar
+    - Setup Dato
+- Login to Dropbox
+- Safari
     - Always show tabs
-  - Xcode
+- Xcode
     - Install
     - Accept license: sudo xcodebuild -license accept
     - Install Command Line Tools: xcode-select --install
@@ -34,19 +61,15 @@ Areas not covered by this script:
     - Continue building after errors
     - Show line numbers
     - Set style to Dusk and font to Fira Code
-  - TextMate
+    - Select custom key bindings
+- TextMate
     - Opening behaviour
     - Show file browser on left
     - Terminal integration
     - Disable rmate connections
-  - Create SSH keys and set them on:
+- Create SSH keys and set them on:
      - GitHub
      - Bitbucket
-  - Copy Aperture library
-  - Copy iTunes library
-  - Copy Cyberduck Preferences and Bookmarks
-  - Check /Library/Application Support/iLifeMediaBrowser/Plug-Ins for superfluous plugins (helps the screensaver to load)
-
-Now run:
-
-brew bundle
+- Copy iTunes library
+- Copy Cyberduck Preferences and Bookmarks
+- Check /Library/Application Support/iLifeMediaBrowser/Plug-Ins for superfluous plugins (helps the screensaver to load)

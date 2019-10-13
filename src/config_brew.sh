@@ -10,9 +10,7 @@ function config_brew
   brew update
 
   # CLI apps
-  brew install git
-  brew install fish
-  brew install mas
+  brew bundle
 
-  echo "✅  finished configuring 'command line'"
+  echo "✅  finished configuring 'Brew'"
 }
