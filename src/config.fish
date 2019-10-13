@@ -3,7 +3,7 @@
 set -U fish_greeting ""
 
 # For Homebrew (brew.sh)
-set -x PATH /usr/local/bin $PATH
+set -x PATH /usr/local/opt/ruby/bin /usr/local/bin $PATH
 set -x HOMEBREW_NO_ANALYTICS 1
 
 # For Cask (caskroom.io)
@@ -27,12 +27,20 @@ alias g="git"
 alias o="open ."
 alias ow="open *.xcworkspace"
 alias ox="open *.xcodeproj"
-alias on="open ~/Desktop/notes.txt"
 alias ofc="mate ~/.config/fish/config.fish"
 alias rmdd="rm -rf ~/Library/Developer/Xcode/DerivedData"
 
 set -x fish_color_status red
 set -x fish_color_git_prompt cyan
+
+function git-close-branch --description 'Switches to master and deletes the current branch'
+    set -l branch (git rev-parse --abbrev-ref HEAD)
+    git checkout master
+    git pull -p
+    if test $branch != 'master'
+      git branch -d $branch
+    end
+end
 
 function fish_prompt --description 'Write out the prompt'
     set -l last_status $status
