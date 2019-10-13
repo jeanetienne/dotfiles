@@ -3,7 +3,7 @@
 function config_global
 {
   # Set computer name (as done via System Preferences → Sharing)
-  sudo scutil --set ComputerName "Jean-Étienne's MacBook Pro";
+  sudo scutil --set ComputerName "Jean-Étienne’s MacBook Pro";
   sudo scutil --set HostName "jeanetienne";
   sudo scutil --set LocalHostName "jeanetienne";
   sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "jeanetienne"

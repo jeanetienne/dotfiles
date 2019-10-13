@@ -12,5 +12,5 @@ function config_brew
   # CLI apps
   brew bundle
 
-  echo "✅  finished configuring 'command line'"
+  echo "✅  finished configuring 'Brew'"
 }
