@@ -24,7 +24,9 @@ cask "fork"
 cask "hammerspoon"
 cask "harvest"
 cask "nordvpn"
+cask "notion"
 cask "paw"
+cask "proxyman"
 cask "slack"
 cask "textmate"
 cask "transmission"
@@ -39,6 +41,7 @@ cask "qlstephen"
 
 mas "Dato", id: 1470584107
 mas "GIF Brewery 3", id: 1081413713
+mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
