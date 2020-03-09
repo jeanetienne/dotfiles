@@ -3,7 +3,6 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "jeanetienne/cookie"
-tap "peripheryapp/periphery"
 
 brew "carthage"
 brew "fish"
@@ -12,32 +11,8 @@ brew "mas"
 brew "ruby"
 brew "jeanetienne/cookie/cookie"
 
-cask "caprine"
-cask "cyberduck"
-cask "daisydisk"
-cask "dash"
-cask "dropbox"
-cask "fastlane"
-cask "firefox"
-cask "font-fira-code"
-cask "fork"
-cask "hammerspoon"
-cask "harvest"
-cask "nordvpn"
-cask "notion"
-cask "paw"
-cask "proxyman"
-cask "slack"
-cask "textmate"
-cask "transmission"
-cask "vlc"
-cask "wechat"
-cask "whatsapp"
-cask "zeplin"
-
-cask "provisioning"
-cask "qlmarkdown"
 cask "qlstephen"
+cask "qlmarkdown"
 
 mas "Dato", id: 1470584107
 mas "GIF Brewery 3", id: 1081413713
@@ -47,4 +22,3 @@ mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Pixelmator Pro", id: 1289583905
 mas "Wipr", id: 1320666476
-mas "Xcode", id: 497799835

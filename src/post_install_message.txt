@@ -39,11 +39,13 @@ Areas not covered by this script:
         - Add Scale Image as a "Finder Quick Action"
     - Time Machine
         - Exclude other external volumes
-        - Exclude /Applications, /Library, /Users/{GUest,Shared}, ~/\.*, System Files and Applications
+        - Exclude /Applications, /Library, /Users/{Guest,Shared}, ~/\.*, System Files and Applications
         - Show Time Machine in menu bar
     - Accessibility
         - Zoom: Enable "Use scroll gesture with modifier keys to zoom"
         - Mouse & Trackpad: Set "Spring-loading delay" to "Short"
+- Finder
+    - View > Show View Options (CMD + J) > Show Library Folder
 - iCloud
     - Open all iCloud apps to trigger first sync (Calendar, Contacts, Keychain, Messages, Reminders, Safari, Notes)
     - Coordinate iMessage/SMS/Call forwarding from iPhone
