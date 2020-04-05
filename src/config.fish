@@ -14,7 +14,6 @@ set -x PATH $HOME/.fastlane/bin $PATH
 
 set -x LC_ALL en_US.UTF-8
 set -x LANG en_US.UTF-8
-set -x APPLE_ID apple@jeanetienne.net
 
 # Make TextMate the default editor
 set -x EDITOR "/usr/local/bin/mate -w"
@@ -32,6 +31,10 @@ alias rmdd="rm -rf ~/Library/Developer/Xcode/DerivedData"
 
 set -x fish_color_status red
 set -x fish_color_git_prompt cyan
+
+function standardise-simulator --description 'Sets the simulator to 9:41 and full bars'
+    xcrun simctl status_bar booted override --time 9:41 --dataNetwork wifi --wifiMode active --wifiBars 3 --cellularMode active --cellularBars 4 --batteryState charged --batteryLevel 100
+end
 
 function git-close-branch --description 'Switches to master and deletes the current branch'
     set -l branch (git rev-parse --abbrev-ref HEAD)
