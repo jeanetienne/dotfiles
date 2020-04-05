@@ -19,6 +19,7 @@ function config_git
   git config --global alias.st "status"; 
   git config --global alias.com "checkout master"; 
   git config --global alias.rbm "rebase master"; 
+  git config --global alias.rbi "rebase -i"; 
   git config --global alias.rbim "rebase -i master"; 
   git config --global alias.rbc "rebase --continue"; 
   git config --global alias.rba "rebase --abort"; 
