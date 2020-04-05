@@ -9,7 +9,7 @@ function config_xcode
   cp ./src/IDETemplateMacros.plist ~/Library/Developer/Xcode/UserData/
 
   mkdir -p ~/Library/Developer/Xcode/UserData/xcdebugger/
-  cp ./src/Jean-Etienne\’s\ Breakpoints.xcbkptlist ~/Library/Developer/Xcode/UserData/xcdebugger/
+  cp ./src/Breakpoints_v2.xcbkptlist ~/Library/Developer/Xcode/UserData/xcdebugger/
 
   echo "✅  finished configuring 'Xcode'"
 }
