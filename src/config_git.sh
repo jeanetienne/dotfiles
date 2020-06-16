@@ -8,6 +8,7 @@ function config_git
 
   # Config
   git config --global pull.default current
+  git config --global pull.ff only
   git config --global push.default current
   git config --global credential.helper osxkeychain
   git config --global diff.algorithm histogram
