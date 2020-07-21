@@ -97,18 +97,13 @@ hs.hotkey.bind({"cmd", "alt", "ctrl"}, "Left", function()
 end)
 
 -- Moving windows between screens
-hs.hotkey.bind({"alt", "ctrl"}, "Left", function()
+hs.hotkey.bind({"alt", "ctrl"}, ",", function()
     local win = hs.window.focusedWindow()
     win:moveToScreen(win:screen():previous(), false, false, 0)
 end)
 
-hs.hotkey.bind({"alt", "ctrl"}, "Right", function()
+hs.hotkey.bind({"alt", "ctrl"}, ".", function()
     local win = hs.window.focusedWindow()
     win:moveToScreen(win:screen():next(), false, false, 0)
-end)
 
--- Experiments
-hs.hotkey.bind({"cmd", "alt", "ctrl"}, "T", function()
-    local app = hs.application.frontmostApplication()
-    hs.tabs.enableForApp(app)
 end)
