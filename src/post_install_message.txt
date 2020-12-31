@@ -3,9 +3,8 @@ Initial setup finished.
 Areas not covered by this script:
 - System Preferences
     - Desktop and Screen Saver: Set custom images
-    - Security and Privacy > General: Allow you Apple Watch to unlock Mac
-    - Spotlight > Privacy: Exclude /Library and /Volumes (invisible)
-    - Notifications: Notification Centre sort order: "Recents by App"
+    - Security and Privacy → General: Allow you Apple Watch to unlock Mac
+    - Spotlight → Privacy: Exclude /Library and /Volumes (invisible)
     - Displays: Disable "Automatically adjust brightness", and enable Nigh Shift
     - Keyboard:
         - Keyboard:
@@ -22,6 +21,9 @@ Areas not covered by this script:
                     - Show Next Tab ⌥+CMD+→
                 - Mail.app
                     - Send CMD+Return
+				- Xcode.app
+					- Show Previous Window Tab ^+⌥+←
+					- Show Next Window Tab ^+⌥+→
             - Input Sources: Show Input menu in menu bar
     - Sound: Show volume in menu bar
     - iCloud: 
@@ -43,13 +45,13 @@ Areas not covered by this script:
         - Show Time Machine in menu bar
     - Accessibility
         - Zoom: Enable "Use scroll gesture with modifier keys to zoom"
-        - Mouse & Trackpad: Set "Spring-loading delay" to "Short"
+        - Pointer Control: Set "Spring-loading delay" to "Short"
 - Finder
-    - View > Show View Options (CMD + J) > Show Library Folder
+    - While in user folder (~): View → Show View Options (CMD + J) → Show Library Folder
 - iCloud
     - Open all iCloud apps to trigger first sync (Calendar, Contacts, Keychain, Messages, Reminders, Safari, Notes)
     - Coordinate iMessage/SMS/Call forwarding from iPhone
-- Customise Today View widgets
+- Customise Control Center widgets
 - Menu bar
     - Setup Dato
 - Login to Dropbox
@@ -61,21 +63,21 @@ Areas not covered by this script:
     - Install Command Line Tools: xcode-select --install
     - Enable Developer mode: sudo DevToolsSecurity -enable
     - Continue building after errors
-    - Show line numbers
+	- Login with Apple developer account
+	- Navigation → Navigation Style: Open in Place
     - Set style to Dusk and font to Fira Code
+    - Show line numbers
     - Select custom key bindings
 - TextMate
     - Opening behaviour
     - Show file browser on left
     - Terminal integration
-    - Disable rmate connections
 - Create SSH keys and set them on:
      - GitHub
-     - Bitbucket
-- Copy (from latest Time Machine backup)
+- Copy from latest Time Machine backup
     - Music library
     - Photos.app Library
     - Desktop
     - Downloads
-    - Cyberduck Preferences and Bookmarks
-- Check /Library/Application Support/iLifeMediaBrowser/Plug-Ins for superfluous plugins (helps the screensaver to load)
+- Copy from external hard drive
+	- Cyberduck bookmarks
