@@ -4,11 +4,9 @@ tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "jeanetienne/cookie"
 
-brew "carthage"
 brew "fish"
 brew "git"
 brew "mas"
-brew "ruby"
 brew "jeanetienne/cookie/cookie"
 
 cask "qlstephen"
@@ -22,3 +20,4 @@ mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Pixelmator Pro", id: 1289583905
 mas "Wipr", id: 1320666476
+mas "Harvest", id: 506189836

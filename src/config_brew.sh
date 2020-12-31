@@ -12,28 +12,26 @@ function config_brew
   # CLI apps
   brew bundle --file="./src/Brewfile"
 
-  brew cask install caprine --appdir=~/Applications
-  brew cask install cyberduck --appdir=~/Applications
-  brew cask install daisydisk --appdir=~/Applications
-  brew cask install dash --appdir=~/Applications
-  brew cask install dropbox --appdir=~/Applications
-  brew cask install fastlane --appdir=~/Applications
-  brew cask install firefox --appdir=~/Applications
-  brew cask install font-fira-code --appdir=~/Applications
-  brew cask install fork --appdir=~/Applications
-  brew cask install hammerspoon --appdir=~/Applications
-  brew cask install harvest --appdir=~/Applications
-  brew cask install nordvpn --appdir=~/Applications
-  brew cask install notion --appdir=~/Applications
-  brew cask install paw --appdir=~/Applications
-  brew cask install proxyman --appdir=~/Applications
-  brew cask install slack --appdir=~/Applications
-  brew cask install textmate --appdir=~/Applications
-  brew cask install transmission --appdir=~/Applications
-  brew cask install vlc --appdir=~/Applications
-  brew cask install wechat --appdir=~/Applications
-  brew cask install whatsapp --appdir=~/Applications
-  brew cask install zeplin --appdir=~/Applications
+  brew install --cask caprine --appdir=~/Applications; 
+  brew install --cask cyberduck --appdir=~/Applications; 
+  brew install --cask daisydisk --appdir=~/Applications; 
+  brew install --cask dash --appdir=~/Applications; 
+  brew install --cask dropbox --appdir=~/Applications; 
+  brew install --cask fastlane --appdir=~/Applications; 
+  brew install --cask firefox --appdir=~/Applications; 
+  brew install --cask font-fira-code --appdir=~/Applications; 
+  brew install --cask fork --appdir=~/Applications; 
+  brew install --cask hammerspoon --appdir=~/Applications; 
+  brew install --cask harvest --appdir=~/Applications; 
+  brew install --cask nordvpn --appdir=~/Applications; 
+  brew install --cask paw --appdir=~/Applications; 
+  brew install --cask proxyman --appdir=~/Applications; 
+  brew install --cask slack --appdir=~/Applications; 
+  brew install --cask textmate --appdir=~/Applications; 
+  brew install --cask transmission --appdir=~/Applications; 
+  brew install --cask vlc --appdir=~/Applications; 
+  brew install --cask whatsapp --appdir=~/Applications; 
+  brew install --cask zeplin --appdir=~/Applications; 
 
   echo "✅  finished configuring 'Brew'"
 }
