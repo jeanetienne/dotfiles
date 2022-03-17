@@ -1,9 +1,8 @@
-
 # Disable fish greeting
 set -U fish_greeting ""
 
 # For Homebrew (brew.sh)
-set -x PATH /usr/local/opt/ruby/bin /usr/local/bin $PATH
+set -x PATH /usr/local/opt/ruby@2.7/bin /usr/local/bin $PATH
 set -x HOMEBREW_NO_ANALYTICS 1
 
 # For Cask (caskroom.io)
@@ -41,6 +40,15 @@ function git-close-branch --description 'Switches to master and deletes the curr
     git checkout master
     git pull -p
     if test $branch != 'master'
+      git branch -d $branch
+    end
+end
+
+function git-close-branch-main --description 'Switches to main and deletes the current branch'
+    set -l branch (git rev-parse --abbrev-ref HEAD)
+    git checkout main
+    git pull -p
+    if test $branch != 'main'
       git branch -d $branch
     end
 end
