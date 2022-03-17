@@ -9,15 +9,31 @@ brew "git"
 brew "mas"
 brew "jeanetienne/cookie/cookie"
 
-cask "qlstephen"
 cask "qlmarkdown"
+cask "qlstephen"
+
+cask "cyberduck", args: { appdir: "~/Applications" }
+cask "daisydisk", args: { appdir: "~/Applications" }
+cask "dash", args: { appdir: "~/Applications" }
+cask "figma", args: { appdir: "~/Applications" }
+cask "firefox", args: { appdir: "~/Applications" }
+cask "font-fira-code", args: { appdir: "~/Applications" }
+cask "fork", args: { appdir: "~/Applications" }
+cask "hammerspoon", args: { appdir: "~/Applications" }
+cask "paw", args: { appdir: "~/Applications" }
+cask "protonvpn", args: { appdir: "~/Applications" }
+cask "proxyman", args: { appdir: "~/Applications" }
+cask "sim-genie", args: { appdir: "~/Applications" }
+cask "slack", args: { appdir: "~/Applications" }
+cask "textmate", args: { appdir: "~/Applications" }
+cask "transmission", args: { appdir: "~/Applications" }
+cask "whatsapp", args: { appdir: "~/Applications" }
 
 mas "Dato", id: 1470584107
-mas "GIF Brewery 3", id: 1081413713
-mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Pixelmator Pro", id: 1289583905
+mas "RAW Power", id: 1157116444
 mas "Wipr", id: 1320666476
-mas "Harvest", id: 506189836
+mas "Xcode", id: 497799835
