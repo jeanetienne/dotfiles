@@ -54,9 +54,9 @@ Areas not covered by this script:
 - Customise Control Center widgets
 - Menu bar
     - Setup Dato
-- Login to Dropbox
 - Safari
     - Always show tabs
+    - Remove history items manually
 - Terminal
 	- Full disk access
 - Xcode
