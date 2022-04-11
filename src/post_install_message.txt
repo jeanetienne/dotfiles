@@ -57,6 +57,8 @@ Areas not covered by this script:
 - Login to Dropbox
 - Safari
     - Always show tabs
+- Terminal
+	- Full disk access
 - Xcode
     - Install
     - Accept license: sudo xcodebuild -license accept
