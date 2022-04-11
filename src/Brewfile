@@ -10,7 +10,6 @@ brew "mas"
 brew "jeanetienne/cookie/cookie"
 
 cask "qlmarkdown"
-cask "qlstephen"
 
 cask "cyberduck", args: { appdir: "~/Applications" }
 cask "daisydisk", args: { appdir: "~/Applications" }
@@ -36,4 +35,3 @@ mas "Pages", id: 409201541
 mas "Pixelmator Pro", id: 1289583905
 mas "RAW Power", id: 1157116444
 mas "Wipr", id: 1320666476
-mas "Xcode", id: 497799835
