@@ -35,16 +35,7 @@ function standardise-simulator --description 'Sets the simulator to 9:41 and ful
     xcrun simctl status_bar booted override --time 9:41 --dataNetwork wifi --wifiMode active --wifiBars 3 --cellularMode active --cellularBars 4 --batteryState charged --batteryLevel 100
 end
 
-function git-close-branch --description 'Switches to master and deletes the current branch'
-    set -l branch (git rev-parse --abbrev-ref HEAD)
-    git checkout master
-    git pull -p
-    if test $branch != 'master'
-      git branch -d $branch
-    end
-end
-
-function git-close-branch-main --description 'Switches to main and deletes the current branch'
+function git-close-branch --description 'Switches to main and deletes the current branch'
     set -l branch (git rev-parse --abbrev-ref HEAD)
     git checkout main
     git pull -p
